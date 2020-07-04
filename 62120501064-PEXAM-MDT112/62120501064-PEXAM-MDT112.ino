@@ -42,7 +42,7 @@ void loop(){
         digitalWrite(stepPin,LOW);
         delayMicroseconds(500);
         }
-        for(int x=360; x>=360; x--)
+        for(int x=360; x>=0; x--)
         {
         digitalWrite(stepPin,HIGH);
         delayMicroseconds(500);
