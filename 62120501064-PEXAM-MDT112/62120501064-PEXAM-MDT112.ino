@@ -42,7 +42,15 @@ void loop(){
         digitalWrite(stepPin,LOW);
         delayMicroseconds(500);
         }
-
+        for(int x=360; x>=360; x--)
+        {
+        digitalWrite(stepPin,HIGH);
+        delayMicroseconds(500);
+        digitalWrite(stepPin,LOW);
+        delayMicroseconds(500);
+       }
+        Serial.println("Step CCW 360  Degrees");
+        delay(800);
    
 
 }
