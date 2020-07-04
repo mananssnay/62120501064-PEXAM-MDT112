@@ -1,4 +1,7 @@
 #define BUZZER 8
+const int stepPin = 3;
+const int dirPin = 4;
+
 
 void setup(){
 
@@ -19,4 +22,19 @@ void setup(){
        delay(100);
 }
 
-void loop(){}
+
+
+
+void loop(){
+    digitalWrite(dirPin,HIGH);
+    for(int x=0; x<200; x++){
+        digitalWrite(stepPin,HIGH);
+        delayMicroseconds(500);
+        digitalWrite(stepPin,LOW);
+        delayMicroseconds(500);
+    }
+
+    Serial.println("Step CW 360 Degrees");
+    delay(900);
+
+}
