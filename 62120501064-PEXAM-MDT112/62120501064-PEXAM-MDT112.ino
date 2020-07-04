@@ -33,6 +33,7 @@ void setup(){
         sevenSegment.init();
         sevenSegment.set(7);
         sevenSegment.displayNum(0000);
+        sevenSegment.clear();
          delay(800);
 
     }
@@ -64,6 +65,11 @@ void loop(){
        }
         Serial.println("Step CCW 360  Degrees");
         delay(800);
+
+         pinMode(BUZZER,OUTPUT); 
+
+         tone(8,600,300); 
+         delay(100);
 
     
 
