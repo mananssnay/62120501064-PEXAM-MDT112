@@ -1,7 +1,9 @@
 #include <Stepper.h>
 #define BUZZER 8
+
 const int stepPin = 3;
 const int dirPin = 4;
+
 
 
 void setup(){
@@ -22,6 +24,7 @@ void setup(){
        Serial.println("Hello MDT");
        delay(100);
 
+
     }
 
 
@@ -32,7 +35,7 @@ void loop(){
   
      
        digitalWrite(dirPin,HIGH);
-       for(int x=0; x<=200; x++)
+       for(int x=0; x<=360; x++)
        {
         digitalWrite(stepPin,HIGH);
         delayMicroseconds(500);
@@ -40,17 +43,6 @@ void loop(){
         delayMicroseconds(500);
         }
 
-         Serial.println("Step CW 360  Degrees");
-         delay(900);
-
-    for(int x=360; x>=360; x--)
-        {
-        digitalWrite(stepPin,HIGH);
-        delayMicroseconds(500);
-        digitalWrite(stepPin,LOW);
-        delayMicroseconds(500);
-       }
-        Serial.println("Step CCW 360  Degrees");
-        delay(800);
+   
 
 }
