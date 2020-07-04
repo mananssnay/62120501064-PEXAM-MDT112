@@ -107,4 +107,22 @@ void loop(){
         digitalWrite(stepPin,LOW);
         delayMicroseconds(500);
         }
+
+    
+      
+        else if (count <=90)
+        {
+       digitalWrite(stepPin,HIGH);
+        delayMicroseconds(500);
+        digitalWrite(stepPin,LOW);
+        delayMicroseconds(500);
+           
+         }
+         else (count >=45)
+         {
+         digitalWrite(stepPin,HIGH);
+        delayMicroseconds(500);
+        digitalWrite(stepPin,LOW);
+        delayMicroseconds(500);
+        }
 }
