@@ -14,6 +14,9 @@ void setup(){
       tone(8,900,600); //เสียงที่1
      
       delay(100);
+
+       Serial.println("Hello MDT");
+       delay(100);
 }
 
 void loop(){}
